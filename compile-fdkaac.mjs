@@ -6,7 +6,7 @@ import path from "path";
 export const enableFdkAac = async (isWindows) => {
   if (!fs.existsSync("fdkaac")) {
     const response = execSync(
-      "curl -L https://sourceforge.net/projects/opencore-amr/files/fdk-aac/fdk-aac-2.0.2.tar.gz/download?use_mirror=gigenet > fdkaac.tar.gz"
+      "curl -L https://github.com/mstorsjo/fdk-aac/archive/refs/tags/v2.0.2.tar.gz > fdkaac.tar.gz"
     );
     execSync("tar -xzf fdkaac.tar.gz", {
       stdio: "inherit",
