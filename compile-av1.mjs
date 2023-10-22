@@ -17,7 +17,7 @@ Cflags: -I$\{prefix\}/src -I$\{srcdir\}/src -I$\{prefix\} -I$\{srcdir\} -I$\{pre
   `.trim();
 
   console.log(pkgConfig);
-  console.log(execSync("ls && pwd"));
+  execSync("ls && pwd", { stdio: 'inherit'});
 
   if (!existsSync("av1")) {
     execSync("git clone https://code.videolan.org/videolan/dav1d av1", {
