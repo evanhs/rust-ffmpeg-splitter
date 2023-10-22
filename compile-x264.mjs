@@ -14,14 +14,14 @@ export const enableX264 = (isMusl, isWindows) => {
     });
   }
 
-  execSync("git checkout stable", {
-    cwd: "x264",
-    stdio: "inherit",
-  });
-  execSync("git pull", {
-    cwd: "x264",
-    stdio: "inherit",
-  });
+  // execSync("git checkout stable", {
+  //   cwd: "x264",
+  //   stdio: "inherit",
+  // });
+  // execSync("git pull", {
+  //   cwd: "x264",
+  //   stdio: "inherit",
+  // });
 
   console.log(process.cwd());
 

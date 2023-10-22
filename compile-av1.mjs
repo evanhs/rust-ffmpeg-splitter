@@ -25,9 +25,9 @@ Cflags: -I$\{prefix\}/src -I$\{srcdir\}/src -I$\{prefix\} -I$\{srcdir\} -I$\{pre
     });
   }
 
-  execSync("git checkout 1.2.1", {
-    cwd: "av1",
-  });
+  // execSync("git checkout 1.2.1", {
+  //   cwd: "av1",
+  // });
 
   rmSync("av1/build", {
     force: true,
