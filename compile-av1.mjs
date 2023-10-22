@@ -16,6 +16,8 @@ Libs: -L$\{prefix\}/src -ldav1d -lpthread ${isWindows ? "" : "-ldl"}
 Cflags: -I$\{prefix\}/src -I$\{srcdir\}/src -I$\{prefix\} -I$\{srcdir\} -I$\{prefix\}/include/dav1d -I$\{srcdir\}/include/dav1d -I$\{prefix\}/include -I$\{srcdir\}/include
   `.trim();
 
+  console.log(pkgConfig);
+
   if (!existsSync("av1")) {
     execSync("git clone https://code.videolan.org/videolan/dav1d av1", {
       stdio: "inherit",

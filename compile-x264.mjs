@@ -23,6 +23,8 @@ export const enableX264 = (isMusl, isWindows) => {
     stdio: "inherit",
   });
 
+  console.log(process.cwd());
+
   execSync(
     [
       path.posix.join(process.cwd().replace(/\\/g, "/"), "x264", "configure"),
